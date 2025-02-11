@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 
 var builder = new ConfigurationBuilder();
 builder.SetBasePath(Directory.GetCurrentDirectory());
-builder.AddJsonFile("connection.json");
+builder.AddJsonFile("jsconfig1.json");
 var config = builder.Build();
 var connectionString = config.GetConnectionString("DefaultConnection");
 var optionsBuilder = new DbContextOptionsBuilder<UserDBContext>();
