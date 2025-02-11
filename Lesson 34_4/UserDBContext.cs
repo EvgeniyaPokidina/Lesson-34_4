@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Lesson_34_4
 {
-    public class UserDBContext
+    public class UserDBContext:DbContext
     {
       
         private StreamWriter infoLog = new StreamWriter("infoLog.log", true);
